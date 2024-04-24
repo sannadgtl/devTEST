@@ -15,7 +15,7 @@ search.addEventListener("keyup", filterCountries);
 
 function shouldShowImg(img) {
     const selectedCountry = checkedRadio(); 
-    const searchText = search.ariaValueMax; 
+    const searchText = search.value; 
 
     if (selectedCountry !== "All" && selectedCountry !==img.getAttribute("country")) {
         return false; 
