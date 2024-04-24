@@ -1,0 +1,27 @@
+<div class="col-md-4 p-3 mb-5" id="card">
+  <img src="{{ project.data.image }}" alt="" class="img-fluid mx-auto d-block border">
+  <div class="container-fluid pt-4 border">
+    <p class="lead pb-4">
+      {{ project.data.title }} <br>
+      <div>
+      {% for tag in project.data.tech %}
+        <span class="tag"> {{ tag }} </span>
+      {% endfor %}
+      </div>
+    </p>
+    <a href="{{ project.data.projectPageUrl }}" class="btn btn-primary mb-3">View Project</a>
+  </div>
+</div>
+
+<script>
+  window.addEventListener("DOMContentLoaded", function () {
+    window.sr = ScrollReveal(); 
+    sr.reveal("#card", {
+      delay: 30,
+      useDelay: 'onload',
+      origin: 'bottom',
+      distance: '50%',
+      duration: 1000
+    });
+  }); 
+</script>

@@ -1,0 +1,200 @@
+* body {
+    font-family: "Karla";
+}
+
+/* navbar */
+.navbar {
+    background-color: #C2E0F2;
+}
+
+/* hero section */
+.outer-headings {
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.animation-container {
+    border: 0.5px solid black;
+    border-radius: 5rem;
+    margin-block: 1rem;
+}
+
+.inner-headings {
+    width: 400px; 
+    line-height: 55px;
+    font-size: 45px;
+    overflow: hidden;
+    margin-block: 1rem;
+    padding-inline: 2rem;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+
+#hero {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.animated-item {
+    animation: slideIn 3500ms forwards cubic-bezier(0.1, 0.67, 0.29, 0.98);
+}
+
+@keyframes slideIn {
+    0% {
+      transform: translateY(50%);
+      opacity: 0;
+    }
+    20% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    80% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-50%); 
+      opacity: 0;
+    }
+}
+
+/* individiual project card */
+.lead span {
+    font-size: 0.8rem;
+}
+
+.btn-primary {
+    background-color: #272727;
+    color: white;
+    border: #272727;;
+    --bs-btn-hover-bg: #C2E0F2;
+    --bs-btn-hover-color: #272727;
+    --bs-btn-active-bg: #71bcea;
+    --bs-btn-active-color: #272727; 
+}
+
+.tag {
+    background-color: #C2E0F2;
+    padding: 0.5rem 1rem;
+    font-size: 0.7rem;
+    border-radius: 999px;
+    margin-right: 0.25rem;
+}
+
+/* footer */
+.footer {
+    background-color: #C2E0F2;
+    border-radius: 1rem 1rem 0rem 0rem;
+}
+
+#footer-img-bg {
+    background-color: #272727;
+    border-radius: 12px;
+}
+
+#footer-img {
+    max-height: 152px;
+}
+
+.icon-colour {
+    color: #272727;
+    font-size: 3rem;
+}
+
+
+/* project page */
+.summary {
+    font-size: 1rem;
+}
+
+
+/* drink order and tip calculator */
+.form-check-input {
+    outline-color: black; 
+    outline-width: 1px;
+    outline-style: solid;
+}
+
+.cola {
+    min-width: 100px;
+    max-width: 200px;
+    background-color: rgb(72, 30, 0);
+    color: white;
+    padding-inline: 1rem;
+    padding-block: 0.5rem;
+    border: 1px solid black;
+    border-radius: 2rem;
+    margin: 0.5rem;
+}
+
+.lemon {
+    min-width: 100px;
+    max-width: 200px;
+    background-color: lemonchiffon;
+    padding-inline: 1rem;
+    padding-block: 0.5rem;
+    border: 1px solid black;
+    border-radius: 2rem;
+    margin: 0.5rem; 
+}
+
+.orange {
+    min-width: 100px;
+    max-width: 200px;
+    background-color: orange;
+    padding-inline: 1rem;
+    padding-block: 0.5rem;
+    border: 1px solid black;
+    border-radius: 2rem;
+    margin: 0.5rem; 
+}
+
+.button {
+    min-width: 100px;
+    max-width: 200px;
+    padding-inline: 1rem;
+    padding-block: 0.5rem;
+    border: 1px solid black;
+    border-radius: 2rem;
+    margin: 0.5rem; 
+    color: black;
+}
+
+button {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    padding-inline: 2rem;
+    padding-block: 1rem;
+    border-radius: 2rem;
+}
+
+input[type="number"] {
+    width: 70%; 
+    box-sizing: border-box; 
+}
+
+/* contact form */
+.required {
+    font-weight: bold;
+    color: red;
+}
+
+/* about */
+#img1, 
+#img2, 
+#img3, 
+#img4 {
+    border-radius: 0.5rem; 
+} 
+
+.lead a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
